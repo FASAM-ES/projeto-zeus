@@ -35,8 +35,12 @@ public class ArtigoTest extends TestCase {
        assertNotNull(artigo.getUsuario());
        assertNotNull(artigo.getTitulo());
    }
-       public void testTitulooEmArtigo(){
+       public void testTituloEmArtigo(){
        Artigo artigo = new Artigo(new Usuario());
        assertNotNull(artigo.getTitulo());
+   }
+       public void testDescricaoEmArtigo(){
+       Artigo artigo = new Artigo(new Usuario());
+       assertNotNull(artigo.getDescricao());
    }
 }
