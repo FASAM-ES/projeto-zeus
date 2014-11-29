@@ -21,5 +21,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.github.adrianboimvaser</groupId>
+      <artifactId>postgresql-dist</artifactId>
+      <version>9.2.4</version>
+      <type>zip</type>
+      <classifier>windows</classifier>
+    </dependency>
   </dependencies>
 </project>
