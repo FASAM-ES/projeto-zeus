@@ -18,6 +18,10 @@ public class Artigo {
  Usuario usuario;
  List<Comentario> comentarios;
  List<Tag> tags;
+ 
+ public Artigo(Usuario usuario){
+ this.usuario = usuario;
+ }
 
     public Usuario getUsuario() {
         return usuario;
