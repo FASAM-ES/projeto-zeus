@@ -13,9 +13,9 @@ import junit.framework.TestCase;
  *
  * @author Aluno
  */
-public class ArtigoTesteUnitario extends TestCase {
+public class ArtigoTest extends TestCase {
     
-    public ArtigoTesteUnitario(String testName) {
+    public ArtigoTest(String testName) {
         super(testName);
     }
     
@@ -33,5 +33,14 @@ public class ArtigoTesteUnitario extends TestCase {
       public void testUsuarioEmArtigo(){
        Artigo artigo = new Artigo(new Usuario());
        assertNotNull(artigo.getUsuario());
+       assertNotNull(artigo.getTitulo());
+   }
+       public void testTituloEmArtigo(){
+       Artigo artigo = new Artigo(new Usuario());
+       assertNotNull(artigo.getTitulo());
+   }
+       public void testDescricaoEmArtigo(){
+       Artigo artigo = new Artigo(new Usuario());
+       assertNotNull(artigo.getDescricao());
    }
 }
