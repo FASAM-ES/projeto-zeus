@@ -4,6 +4,10 @@
  */
 package br.com.fasam.projetoexemplo;
 
+import br.com.fasam.projetoexemplo.entidades.Artigo;
+import br.com.fasam.projetoexemplo.entidades.Categoria;
+import br.com.fasam.projetoexemplo.entidades.Usuario;
+import static junit.framework.Assert.assertNotNull;
 import junit.framework.TestCase;
 
 /**
@@ -27,4 +31,8 @@ public class CategoriaTest extends TestCase {
     }
     // TODO add test methods here. The name must begin with 'test'. For example:
     // public void testHello() {}
+     public void testNomeEmCategoria(){
+       Categoria categoria = new Categoria();
+       assertNotNull(categoria.getNome());
+   }
 }
