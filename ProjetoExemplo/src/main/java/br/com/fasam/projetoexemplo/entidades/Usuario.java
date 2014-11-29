@@ -4,6 +4,9 @@
  */
 package br.com.fasam.projetoexemplo.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Aluno
@@ -15,7 +18,33 @@ public class Usuario {
     String senha;
     String telefone;
     String cpf;
+    List<Artigo> artigos;
+    List<Comentario> comentarios;
+   
+    
+    public Artigo getArtigo(Integer i){
+        return artigos.get(i);
+    }
+    public void addArtigo(Artigo artigo){
+        if(this.artigos == null){
+            this.artigos = new ArrayList<Artigo>();
+        }
+        this.artigos.add(artigo);
+    }
 
+    List<Comentario> Comentarios;
+    
+    public Comentario getComentario(Integer i){
+        return comentarios.get(i);
+    }
+        public void addComentario(Comentario comentario){
+        if(this.comentarios == null){
+            this.comentarios = new ArrayList<Comentario>();
+        }
+        this.Comentarios.add(comentario);
+    }
+        
+        
     public int getId() {
         return id;
     }
