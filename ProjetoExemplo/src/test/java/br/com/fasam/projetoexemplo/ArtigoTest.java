@@ -43,4 +43,8 @@ public class ArtigoTest extends TestCase {
        Artigo artigo = new Artigo(new Usuario());
        assertNotNull(artigo.getDescricao());
    }
+       public void testTagEmArtigo(){
+       Artigo artigo = new Artigo(new Usuario());
+       assertNotNull(artigo.getTag(0));
+   }
 }
