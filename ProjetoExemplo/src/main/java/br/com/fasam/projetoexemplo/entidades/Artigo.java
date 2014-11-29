@@ -21,6 +21,8 @@ public class Artigo {
  
  public Artigo(Usuario usuario){
  this.usuario = usuario;
+ this.titulo = "Ciências aplicadas";
+    
  }
 
     public Usuario getUsuario() {
