@@ -18,6 +18,13 @@ public class Artigo {
  Usuario usuario;
  List<Comentario> comentarios;
  List<Tag> tags;
+ 
+ public Artigo(Usuario usuario){
+ this.usuario = usuario;
+ this.titulo = "Ciências aplicadas";
+ this.descricao = "Artigo referente a materia de Ciências Aplicadas, necessario que o usuario tenha sido aprovado no Modulo01";
+  this.addTag(new Tag());
+ }
 
     public Usuario getUsuario() {
         return usuario;
@@ -48,6 +55,7 @@ public class Artigo {
         if(this.tags == null){
             this.tags = new ArrayList<Tag>();
         }
+        this.tags.add(tag);
     }
      public void remTag(Tag tag){
         if(this.tags == null){

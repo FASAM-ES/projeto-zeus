@@ -16,6 +16,12 @@ public class Tag {
     String descricao;
     List<Artigo> artigos;
     
+    public Tag(){
+        this.nome = "Teste de Nome";
+        this.descricao = "Teste de Descricao";
+        //Teste
+    }
+    
     public Artigo getArtigo(Integer i){
         return artigos.get(i);
     }
@@ -45,5 +51,5 @@ public class Tag {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
+    //teste de commit
 }

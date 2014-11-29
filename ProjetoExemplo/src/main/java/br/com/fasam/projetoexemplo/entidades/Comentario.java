@@ -13,6 +13,13 @@ public class Comentario {
    String descricao;
    Usuario usuario;
    Artigo artigo;
+   
+
+    public Comentario(String titulo, String descricao, Usuario usuario, Artigo artigo) {
+        
+    }
+   
+   
     public Usuario getUsuario() {
         return usuario;
     }
