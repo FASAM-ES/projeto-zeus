@@ -24,6 +24,7 @@ public class Artigo {
  this.titulo = "Ciências aplicadas";
  this.descricao = "Artigo referente a materia de Ciências Aplicadas, necessario que o usuario tenha sido aprovado no Modulo01";
   this.addTag(new Tag());
+  //this.addComentario(new Comentario());
  }
 
     public Usuario getUsuario() {
@@ -41,6 +42,7 @@ public class Artigo {
         if(this.comentarios == null){
             this.comentarios = new ArrayList<Comentario>();
         }
+        this.comentarios.add(comentario);
     }
     public void remComentario(Comentario comentario){
         if(this.comentarios == null){
