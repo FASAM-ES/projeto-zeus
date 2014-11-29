@@ -4,6 +4,9 @@
  */
 package br.com.fasam.projetoexemplo.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Aluno
@@ -11,8 +14,47 @@ package br.com.fasam.projetoexemplo.entidades;
 
 public class Artigo {
  String titulo;
- String descrição;
+ String descricao;
+ Usuario usuario;
+ List<Comentario> comentarios;
+ List<Tag> tags;
 
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public Comentario getComentario(Integer i){
+        return comentarios.get(i);
+    }
+    public void addComentario(Comentario comentario){
+        if(this.comentarios == null){
+            this.comentarios = new ArrayList<Comentario>();
+        }
+    }
+    public void remComentario(Comentario comentario){
+        if(this.comentarios == null){
+            this.comentarios.remove(comentario);
+        }
+    }
+
+     public Tag getTag(Integer i){
+        return tags.get(i);
+    }
+     public void addTag(Tag tag){
+        if(this.tags == null){
+            this.tags = new ArrayList<Tag>();
+        }
+    }
+     public void remTag(Tag tag){
+        if(this.tags == null){
+            this.tags.remove(tag);
+        }
+    }
+ 
     public String getTitulo() {
         return titulo;
     }
@@ -21,12 +63,12 @@ public class Artigo {
         this.titulo = titulo;
     }
 
-    public String getDescrição() {
-        return descrição;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescrição(String descrição) {
-        this.descrição = descrição;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     

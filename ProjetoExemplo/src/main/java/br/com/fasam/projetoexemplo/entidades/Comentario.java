@@ -11,6 +11,8 @@ package br.com.fasam.projetoexemplo.entidades;
 public class Comentario {
    String titulo;
    String descricao;
+   Usuario usuario;
+   Artigo artigo;
 
     public String getTitulo() {
         return titulo;
