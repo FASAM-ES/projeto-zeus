@@ -13,6 +13,22 @@ public class Comentario {
    String descricao;
    Usuario usuario;
    Artigo artigo;
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public Artigo getArtigo() {
+        return artigo;
+    }
+
+    public void setArtigo(Artigo artigo) {
+        this.artigo = artigo;
+    }
+   
 
     public String getTitulo() {
         return titulo;
