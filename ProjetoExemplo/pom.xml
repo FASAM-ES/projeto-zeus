@@ -22,11 +22,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.github.adrianboimvaser</groupId>
-      <artifactId>postgresql-dist</artifactId>
-      <version>9.2.4</version>
-      <type>zip</type>
-      <classifier>windows</classifier>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.2-1003-jdbc3</version>
     </dependency>
   </dependencies>
 </project>
