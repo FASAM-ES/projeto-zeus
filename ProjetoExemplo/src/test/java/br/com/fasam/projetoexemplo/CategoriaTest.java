@@ -5,6 +5,7 @@
 package br.com.fasam.projetoexemplo;
 
 import br.com.fasam.projetoexemplo.entidades.Artigo;
+import br.com.fasam.projetoexemplo.entidades.Categoria;
 import br.com.fasam.projetoexemplo.entidades.Usuario;
 import static junit.framework.Assert.assertNotNull;
 import junit.framework.TestCase;
@@ -13,9 +14,9 @@ import junit.framework.TestCase;
  *
  * @author Aluno
  */
-public class ArtigoTest extends TestCase {
+public class CategoriaTest extends TestCase {
     
-    public ArtigoTest(String testName) {
+    public CategoriaTest(String testName) {
         super(testName);
     }
     
@@ -30,21 +31,8 @@ public class ArtigoTest extends TestCase {
     }
     // TODO add test methods here. The name must begin with 'test'. For example:
     // public void testHello() {}
-      public void testUsuarioEmArtigo(){
-       Artigo artigo = new Artigo(new Usuario());
-       assertNotNull(artigo.getUsuario());
-       assertNotNull(artigo.getTitulo());
-   }
-       public void testTituloEmArtigo(){
-       Artigo artigo = new Artigo(new Usuario());
-       assertNotNull(artigo.getTitulo());
-   }
-       public void testDescricaoEmArtigo(){
-       Artigo artigo = new Artigo(new Usuario());
-       assertNotNull(artigo.getDescricao());
-   }
-       public void testTagEmArtigo(){
-       Artigo artigo = new Artigo(new Usuario());
-       assertNotNull(artigo.getTag(0));
+     public void testNomeEmCategoria(){
+       Categoria categoria = new Categoria();
+       assertNotNull(categoria.getNome());
    }
 }

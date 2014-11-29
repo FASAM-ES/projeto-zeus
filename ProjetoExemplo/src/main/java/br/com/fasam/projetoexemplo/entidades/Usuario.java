@@ -21,7 +21,13 @@ public class Usuario {
     List<Artigo> artigos;
     List<Comentario> comentarios;
    
-    
+    public Usuario (){
+        this.nome = "Pedro";
+        this.cpf = "01234567890";
+        this.senha = "123";
+        this.telefone = "91285591";
+    }
+
     public Artigo getArtigo(Integer i){
         return artigos.get(i);
     }

@@ -15,6 +15,10 @@ public class Categoria {
     String nome; 
     String descrição;
     List<Artigo> artigos;
+    
+    public Categoria(){
+    this.nome = "TI";
+    }
      public Artigo getArtigo(Integer i){
         return artigos.get(i);
     }
