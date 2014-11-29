@@ -16,6 +16,11 @@ public class Tag {
     String descricao;
     List<Artigo> artigos;
     
+    public Tag(){
+        this.nome = "Teste de Nome";
+        this.descricao = "Teste de Descricao";
+    }
+    
     public Artigo getArtigo(Integer i){
         return artigos.get(i);
     }
