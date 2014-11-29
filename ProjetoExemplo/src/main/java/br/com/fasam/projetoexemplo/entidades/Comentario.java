@@ -14,6 +14,11 @@ public class Comentario {
    Usuario usuario;
    Artigo artigo;
    
+   public Comentario(){
+    titulo = "Facebook";
+    descricao = "tudo por aqui";
+}
+   
 
     public Comentario(String titulo, String descricao, Usuario usuario, Artigo artigo) {
         
