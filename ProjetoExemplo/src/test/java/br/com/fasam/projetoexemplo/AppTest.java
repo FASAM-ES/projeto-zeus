@@ -33,6 +33,7 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        int val = 5;
+        assertEquals(val, 5);
     }
 }
