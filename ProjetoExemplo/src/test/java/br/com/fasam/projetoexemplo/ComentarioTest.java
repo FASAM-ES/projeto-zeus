@@ -5,6 +5,9 @@
 package br.com.fasam.projetoexemplo;
 
 
+import br.com.fasam.projetoexemplo.entidades.Artigo;
+import br.com.fasam.projetoexemplo.entidades.Comentario;
+import br.com.fasam.projetoexemplo.entidades.Usuario;
 import junit.framework.TestCase;
 
 /**
@@ -27,10 +30,18 @@ public class ComentarioTest extends TestCase {
         super.tearDown();
     }
     
-    public void testComentario(String titulo, String descricao, String usuario, String artigo){
-       assertNotNull(titulo);
-       assertNotNull(descricao);
-       assertNotNull(usuario);
-       assertNotNull(artigo);
-    }
+    public void testComentario(){
+        String titulo = "Integracao de Software";
+        String descricao ="Utilizar ferramentas que Integrem "
+           + "Desenvolvimento com framework de desenvolvimento ageis" ;
+        Usuario usuario = new Usuario();
+        Artigo artigo = new Artigo(usuario);
+
+        
+        Comentario comentario = new Comentario(titulo, descricao, usuario, artigo);
+       assertNotNull(comentario.getTitulo());
+       assertNotNull(comentario.getArtigo());
+       assertNotNull(comentario.getUsuario());
+       assertNotNull(comentario.getDescricao());
+    } 
 }
