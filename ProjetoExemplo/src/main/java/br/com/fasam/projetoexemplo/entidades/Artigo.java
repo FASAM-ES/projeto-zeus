@@ -18,6 +18,13 @@ public class Artigo {
  Usuario usuario;
  List<Comentario> comentarios;
  List<Tag> tags;
+ 
+ public Artigo(Usuario usuario){
+ this.usuario = usuario;
+ this.titulo = "Ciências aplicadas";
+ this.descricao = "Artigo referente a materia de Ciências Aplicadas, necessario que o usuario tenha sido aprovado no Modulo01";
+    
+ }
 
     public Usuario getUsuario() {
         return usuario;
