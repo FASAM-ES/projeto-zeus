@@ -31,6 +31,12 @@ public class Usuario {
         }
         this.artigos.add(artigo);
     }
+    
+    public void remArtigo(Artigo artigo){
+        if(this.artigos != null){
+            this.artigos.remove(artigo);
+        }
+    }
 
     List<Comentario> Comentarios;
     
@@ -42,6 +48,12 @@ public class Usuario {
             this.comentarios = new ArrayList<Comentario>();
         }
         this.Comentarios.add(comentario);
+    }
+        
+    public void remComentario(Comentario comentario){
+        if(this.comentarios == null){
+            this.comentarios.remove(comentario);
+        }
     }
         
         
