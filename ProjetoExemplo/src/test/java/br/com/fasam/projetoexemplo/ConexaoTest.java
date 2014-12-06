@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.com.fasam.projetoexemplo;
 
 import br.com.fasam.conexao.Conexao;
@@ -27,8 +24,7 @@ public class ConexaoTest extends TestCase {
     protected void tearDown() throws Exception {
         super.tearDown();
     }
-    // TODO add test methods here. The name must begin with 'test'. For example:
-    // public void testHello() {}
+
     public void testConexao(){
         Connection con = Conexao.getConexao();
         assertNotNull(con);
