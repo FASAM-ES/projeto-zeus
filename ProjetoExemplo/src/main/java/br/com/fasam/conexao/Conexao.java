@@ -6,7 +6,7 @@ package br.com.fasam.conexao;
 
 /**
  *
- * @author Aluno
+ * @author Pedro Henrique Alves
  */
 import java.sql.*;
 import java.util.logging.Level;
