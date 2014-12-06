@@ -27,15 +27,16 @@ public class Usuario {
         this.telefone = "91285591";
     }
 /**
- * 
+ * Metodo que retorna o artigo
  * @param i
- * @return qtde de artigos
+ * @return 
  */
     public Artigo getArtigo(Integer i){
         return artigos.get(i);
     }
     /**
-     * @return add artigos
+     * Metodo que adiciona Artigos
+     * @return
      * @param artigo 
      */
     public void addArtigo(Artigo artigo){
@@ -45,7 +46,8 @@ public class Usuario {
         this.artigos.add(artigo);
     }
     /**
-     * @return remove artigo
+     * Metodo que remove o Artigo
+     * @return 
      * @param artigo 
      */
     public void remArtigo(Artigo artigo){
@@ -56,15 +58,16 @@ public class Usuario {
 
     
     /**
-     * 
+     * Metodo que retorna os comentarios
      * @param i
-     * @return qtde de comentarios
+     * @return 
      */
     public Comentario getComentario(Integer i){
         return comentarios.get(i);
     }
     /**
-     * @return add comentario
+     * Metodo que adiciona os comentarios
+     * @return 
      * @param comentario 
      */
         public void addComentario(Comentario comentario){
@@ -74,7 +77,8 @@ public class Usuario {
         this.comentarios.add(comentario);
     }
     /**
-     * @return exclui comentario
+     * Metodo que exclui os comentarios
+     * @return 
      * @param comentario 
      */
     public void remComentario(Comentario comentario){
@@ -84,84 +88,84 @@ public class Usuario {
     }
         
     /**
-     * 
-     * @return id
+     * Metodo que retorna o id
+     * @return 
      */
     public int getId() {
         return id;
     }
     /**
-     * 
+     * Metodo que seta o id
      * @param id 
      */
     public void setId(int id) {
         this.id = id;
     }
     /**
-     * 
+     * Metodo que retorna o nome
      * @return nome
      */
     public String getNome() {
         return nome;
     }
     /**
-     * 
+     * Metodo que seta o nome
      * @param nome 
      */
     public void setNome(String nome) {
         this.nome = nome;
     }
     /**
-     * 
+     * Metodo que retorna o email
      * @return email
      */
     public String getEmail() {
         return email;
     }
     /**
-     * 
+     * Metodo que seta o email
      * @param email 
      */
     public void setEmail(String email) {
         this.email = email;
     }
     /**
-     * 
+     * Metodo que retorna a senha
      * @return senha
      */
     public String getSenha() {
         return senha;
     }
     /**
-     * 
+     * Metodo que seta a senha
      * @param senha 
      */
     public void setSenha(String senha) {
         this.senha = senha;
     }
     /**
-     * 
+     * Metodo que retorna o telefone
      * @return telefone
      */
     public String getTelefone() {
         return telefone;
     }
     /**
-     * 
+     * Metodo que seta o telefone
      * @param telefone 
      */
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
     /**
-     * 
+     * Metodo que retorna o cpf
      * @return cpf
      */
     public String getCpf() {
         return cpf;
     }
     /**
-     * 
+     * Metodo que seta o cpf
      * @param cpf 
      */
     public void setCpf(String cpf) {
