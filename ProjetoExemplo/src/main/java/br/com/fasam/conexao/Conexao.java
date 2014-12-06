@@ -18,13 +18,15 @@ public class Conexao {
     private static String url = "jdbc:postgresql://localhost/fasam";
     private static String usuario = "postgres";
     private static String senha = "fasam";
-    
+    /** 
+     * Contrutor override conexao
+     */
     private Conexao(){
     }
-    /**
-     * 
-     * @return conexao
-     */
+   /**
+    * Metodo que estabelece a conexao
+    * @return 
+    */
     public static Connection getConexao() {
         try {
             Class.forName(driver);
