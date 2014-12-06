@@ -18,6 +18,9 @@ public class Conexao {
     private static String url = "jdbc:postgresql://localhost/fasam";
     private static String usuario = "postgres";
     private static String senha = "fasam";
+    
+    private Conexao(){
+    }
 
     public static Connection getConexao() {
         try {
