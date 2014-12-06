@@ -11,7 +11,7 @@ import junit.framework.TestCase;
 
 /**
  *
- * @author Aluno
+ * @author Pedro henrique alves
  */
 public class ArtigoTest extends TestCase {
     
@@ -30,19 +30,31 @@ public class ArtigoTest extends TestCase {
     }
     // TODO add test methods here. The name must begin with 'test'. For example:
     // public void testHello() {}
+    /**
+     * @return  teste de usuario em artigo
+     */
       public void testUsuarioEmArtigo(){
        Artigo artigo = new Artigo(new Usuario());
        assertNotNull(artigo.getUsuario());
        assertNotNull(artigo.getTitulo());
    }
+     /**
+     * @return  teste de titulo em artigo
+     */
        public void testTituloEmArtigo(){
        Artigo artigo = new Artigo(new Usuario());
        assertNotNull(artigo.getTitulo());
    }
+         /**
+     * @return  teste de descricao em artigo
+     */
        public void testDescricaoEmArtigo(){
        Artigo artigo = new Artigo(new Usuario());
        assertNotNull(artigo.getDescricao());
    }
+         /**
+     * @return  teste de tag em artigo
+     */
        public void testTagEmArtigo(){
        Artigo artigo = new Artigo(new Usuario());
        assertNotNull(artigo.getTag(0));
