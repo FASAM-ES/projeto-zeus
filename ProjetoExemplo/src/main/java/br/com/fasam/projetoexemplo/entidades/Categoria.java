@@ -19,7 +19,7 @@ public class Categoria {
      public Artigo getArtigo(Integer i){
         return artigos.get(i);
     }
-    public void addArtigo(Artigo artigo){
+    public void addArtigo(){
         if(this.artigos == null){
             this.artigos = new ArrayList<Artigo>();
         }
