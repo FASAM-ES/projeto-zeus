@@ -11,6 +11,9 @@ import junit.framework.TestCase;
  */
 public class ConexaoTest extends TestCase {
     
+    private ConexaoTest(){
+}
+    
     public ConexaoTest(String testName) {
         super(testName);
     }
