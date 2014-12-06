@@ -12,6 +12,10 @@ import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Metodo que inicia variaveis de conexao
+ * @author Aluno
+ */
 public class Conexao {
 
     private static String driver = "org.postgresql.Driver";
