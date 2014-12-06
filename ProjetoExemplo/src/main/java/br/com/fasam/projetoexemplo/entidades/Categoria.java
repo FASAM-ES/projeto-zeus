@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class Categoria {
     String nome; 
-    String descrição;
+    String descricao;
     List<Artigo> artigos;
     
     public Categoria(){
@@ -41,12 +41,12 @@ public class Categoria {
         this.nome = nome;
     }
 
-    public String getDescrição() {
-        return descrição;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescrição(String descrição) {
-        this.descrição = descrição;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
     
 }
