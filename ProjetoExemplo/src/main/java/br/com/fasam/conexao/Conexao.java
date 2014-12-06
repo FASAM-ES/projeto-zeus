@@ -21,7 +21,10 @@ public class Conexao {
     
     private Conexao(){
     }
-
+    /**
+     * 
+     * @return conexao
+     */
     public static Connection getConexao() {
         try {
             Class.forName(driver);
