@@ -20,9 +20,7 @@ public class Comentario {
 }
    
 
-    public Comentario(String titulo, String descricao, Usuario usuario, Artigo artigo) {
-        
-    }
+  
    
    
     public Usuario getUsuario() {

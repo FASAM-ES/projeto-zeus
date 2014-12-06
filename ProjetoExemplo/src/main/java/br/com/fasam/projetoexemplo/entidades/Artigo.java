@@ -24,7 +24,6 @@ public class Artigo {
  this.titulo = "Ciências aplicadas Globais";
  this.descricao = "Artigo referente a materia de Ciências Aplicadas, necessario que o usuario tenha sido aprovado no Modulo01";
   this.addTag(new Tag());
-  //this.addComentario(new Comentario());
  }
 
     public Usuario getUsuario() {
