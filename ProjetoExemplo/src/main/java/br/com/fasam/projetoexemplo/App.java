@@ -8,6 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello packages teste dois teste"  );
+        System.out.println( "Hello packages teste teste dois teste"  );
     }
 }
