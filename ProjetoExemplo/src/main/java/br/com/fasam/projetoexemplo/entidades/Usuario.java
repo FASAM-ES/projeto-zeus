@@ -18,7 +18,7 @@ public class Usuario {
     List<Artigo> artigos;
     List<Comentario> comentarios;
    /**
-    * metodo usuario
+    * Metodo que faz override do construtor
     */
     public Usuario (){
         this.nome = "Pedro";
