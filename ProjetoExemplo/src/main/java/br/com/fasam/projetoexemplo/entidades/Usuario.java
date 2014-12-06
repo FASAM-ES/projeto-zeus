@@ -28,6 +28,7 @@ public class Usuario {
     public Artigo getArtigo(Integer i){
         return artigos.get(i);
     }
+    
     public void addArtigo(Artigo artigo){
         if(this.artigos == null){
             this.artigos = new ArrayList<Artigo>();
