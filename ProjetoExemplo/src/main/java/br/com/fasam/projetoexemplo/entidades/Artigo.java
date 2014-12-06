@@ -52,42 +52,69 @@ public class Artigo {
         }
         this.comentarios.add(comentario);
     }
+    /**
+     * Metodo que adiciona comentarios
+     */
     public void remComentario(Comentario comentario){
         if(this.comentarios == null){
             this.comentarios.remove(comentario);
         }
     }
+    /**
+     * Metodo que remove comentarios
+     */
 
      public Tag getTag(Integer i){
         return tags.get(i);
     }
+     /**
+     * Metodo que retorna tag
+     */
      public void addTag(Tag tag){
         if(this.tags == null){
             this.tags = new ArrayList<Tag>();
         }
         this.tags.add(tag);
     }
+     /**
+     * Metodo que adicona uma tag a lista 
+     */
      public void remTag(Tag tag){
         if(this.tags == null){
             this.tags.remove(tag);
         }
     }
+     /**
+     * Metodo que remove uma tag da lista
+     */
  
     public String getTitulo() {
         return titulo;
     }
+    /**
+     * Metodo que retorna titulo
+     */
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+    /**
+     * Metodo que seta  o titulo
+     */
 
     public String getDescricao() {
         return descricao;
     }
+    /**
+     * Metodo que retorna descricao
+     */
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+    /**
+     * Metodo que seta descricao 
+     */
 
     
 }
