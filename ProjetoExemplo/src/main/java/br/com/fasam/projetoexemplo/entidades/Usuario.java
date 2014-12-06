@@ -17,7 +17,9 @@ public class Usuario {
     String cpf;
     List<Artigo> artigos;
     List<Comentario> comentarios;
-   
+   /**
+    * metodo usuario
+    */
     public Usuario (){
         this.nome = "Pedro";
         this.cpf = "01234567890";
