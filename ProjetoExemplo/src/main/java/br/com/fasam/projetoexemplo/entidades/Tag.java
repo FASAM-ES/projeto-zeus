@@ -9,44 +9,43 @@ import java.util.List;
  * @author Aluno
  */
 public class Tag {
-    String nome;
-    String descricao;
-    List<Artigo> artigos;
+    String nomeTag;
+    String descricaoTag;
+    List<Artigo> artigosTag;
     
     public Tag(){
-        this.nome = "Teste de Nome";
-        this.descricao = "Teste de Descricao";
+        this.nomeTag = "Teste de Nome";
+        this.descricaoTag = "Teste de Descricao";
         //Teste
     }
     
     public Artigo getArtigo(Integer i){
-        return artigos.get(i);
+        return artigosTag.get(i);
     }
     public void addArtigo(){
-        if(this.artigos == null){
-            this.artigos = new ArrayList<Artigo>();
+        if(this.artigosTag == null){
+            this.artigosTag = new ArrayList<Artigo>();
         }
     }
     public void remArtigo(Artigo artigo){
-        if(this.artigos != null){
-            this.artigos.remove(artigo);
+        if(this.artigosTag != null){
+            this.artigosTag.remove(artigo);
         }
     }
 
     public String getNome() {
-        return nome;
+        return nomeTag;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.nomeTag = nome;
     }
 
     public String getDescricao() {
-        return descricao;
+        return descricaoTag;
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        this.descricaoTag = descricao;
     }
-    //teste de commit
 }
