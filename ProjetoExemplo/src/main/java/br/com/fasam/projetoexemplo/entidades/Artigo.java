@@ -36,10 +36,16 @@ public class Artigo {
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+     /**
+     * Metodo que seta usuário
+     */
 
     public Comentario getComentario(Integer i){
         return comentarios.get(i);
     }
+      /**
+     * Metodo que retorna usuário
+     */
     public void addComentario(Comentario comentario){
         if(this.comentarios == null){
             this.comentarios = new ArrayList<Comentario>();
