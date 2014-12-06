@@ -17,7 +17,6 @@ public class Usuario {
     String cpf;
     List<Artigo> artigos;
     List<Comentario> comentarios;
-    List<Comentario> Comentarios;
    
     public Usuario (){
         this.nome = "Pedro";
@@ -51,7 +50,7 @@ public class Usuario {
         if(this.comentarios == null){
             this.comentarios = new ArrayList<Comentario>();
         }
-        this.Comentarios.add(comentario);
+        this.comentarios.add(comentario);
     }
         
     public void remComentario(Comentario comentario){
