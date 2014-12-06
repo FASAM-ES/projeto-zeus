@@ -9,19 +9,22 @@ import java.util.List;
  * @author João Carlos Ottobboni
  */
 
-public class Artigo {
- String titulo;
- String descricao;
- Usuario usuario;
- List<Comentario> comentarios;
- List<Tag> tags;
- 
- public Artigo(Usuario usuario){
- this.usuario = usuario;
- this.titulo = "Ciências aplicadas Globais";
- this.descricao = "Artigo referente a materia de Ciências Aplicadas, necessario que o usuario tenha sido aprovado no Modulo01";
-  this.addTag(new Tag());
- }
+  public class Artigo {
+     String titulo;
+     String descricao;
+     Usuario usuario;
+     List<Comentario> comentarios;
+     List<Tag> tags;
+
+     public Artigo(Usuario usuario){
+     this.usuario = usuario;
+     this.titulo = "Ciências aplicadas Globais";
+     this.descricao = "Artigo referente a materia de Ciências Aplicadas, necessario que o usuario tenha sido aprovado no Modulo01";
+      this.addTag(new Tag());
+     }
+    /**
+     * Metodo que faz override do construtor padrão
+     */
 
     public Usuario getUsuario() {
         return usuario;
