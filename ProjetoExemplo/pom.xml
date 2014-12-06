@@ -25,6 +25,13 @@
               <groupId>org.jacoco</groupId>
               <artifactId>jacoco-maven-plugin</artifactId>
               <version>0.7.2.201409121644</version>
+              <executions>
+                  <id>jacoco-init</id>
+                  <phase>initialize</phase>
+                  <goals>
+                      <goal>prepare-agent</goal>
+                  </goals>
+              </executions>
           </plugin>
       </plugins>
   </build>
