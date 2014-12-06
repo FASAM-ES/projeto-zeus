@@ -29,7 +29,7 @@ public class ConexaoTest extends TestCase {
     }
     
     public void testConexao(){
-        Connection con = Conexao.getConexao();
+        //Connection con = Conexao.getConexao();
         //assertNotNull(con);
     }
 }
