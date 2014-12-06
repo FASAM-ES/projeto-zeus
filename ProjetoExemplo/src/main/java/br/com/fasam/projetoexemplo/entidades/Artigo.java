@@ -26,6 +26,12 @@ public class Artigo {
     public Usuario getUsuario() {
         return usuario;
     }
+    /**
+     * Metodo que Retorna usuário
+     * @return Usuario
+     * 
+     */
+     
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
