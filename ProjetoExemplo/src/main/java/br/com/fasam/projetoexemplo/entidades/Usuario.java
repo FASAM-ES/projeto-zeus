@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  *
- * @author Aluno
+ * @author Pedro Henrique Alves
  */
 public class Usuario {
     int id;

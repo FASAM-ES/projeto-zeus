@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  *
- * @author Aluno
+ * @author João Carlos Ottobboni
  */
 
 public class Artigo {

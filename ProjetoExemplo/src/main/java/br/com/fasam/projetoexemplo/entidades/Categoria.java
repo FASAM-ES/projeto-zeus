@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  *
- * @author Aluno
+ * @author Luiz Henrique Dourado
  */
 public class Categoria {
     String nome; 

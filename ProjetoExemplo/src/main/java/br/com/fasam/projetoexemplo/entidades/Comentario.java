@@ -3,7 +3,7 @@ package br.com.fasam.projetoexemplo.entidades;
 
 /**
  *
- * @author Aluno
+ * @author Antonio Tavares
  */
 public class Comentario {
    String titulo;
