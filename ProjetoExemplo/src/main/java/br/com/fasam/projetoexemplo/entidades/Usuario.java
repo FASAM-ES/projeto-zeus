@@ -17,6 +17,7 @@ public class Usuario {
     String cpf;
     List<Artigo> artigos;
     List<Comentario> comentarios;
+    List<Comentario> Comentarios;
    
     public Usuario (){
         this.nome = "Pedro";
@@ -41,7 +42,7 @@ public class Usuario {
         }
     }
 
-    List<Comentario> Comentarios;
+    
     
     public Comentario getComentario(Integer i){
         return comentarios.get(i);
